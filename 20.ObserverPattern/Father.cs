@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ObserverPattern
+{
+    public class Father : IObserver
+    {
+        public void Roar()
+        {
+            Console.WriteLine("{0} {1}", this.GetType(), "Roar");
+        }
+        public void Notify()
+        {
+            this.Roar();
+        }
+    }
+}
